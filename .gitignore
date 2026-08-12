@@ -1,0 +1,7 @@
+.env
+*.env
+.env.*
+*.log
+*.dump
+*.sql.gz
+pmo_backup*.sql
