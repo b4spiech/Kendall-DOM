@@ -1,0 +1,20 @@
+INSERT INTO business_unit (
+    id,
+    business_unit_code,
+    name,
+    owner_role_id,
+    repo_system_id,
+    storage_system_id,
+    is_active,
+    notes
+)
+VALUES (
+    nextval('business_unit_id_seq'),
+    'PMO-AUX',
+    'Auxiliary PMO',
+    1,
+    2,
+    1,
+    TRUE,
+    'Auxiliary business unit used for shared PMO processes, templates, and governance artifacts.'
+);
