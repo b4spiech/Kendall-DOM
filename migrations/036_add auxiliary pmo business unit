@@ -1,5 +1,4 @@
 INSERT INTO business_unit (
-    id,
     business_unit_code,
     name,
     owner_role_id,
@@ -9,7 +8,6 @@ INSERT INTO business_unit (
     notes
 )
 VALUES (
-    nextval('business_unit_id_seq'),
     'PMO-AUX',
     'Auxiliary PMO',
     1,
