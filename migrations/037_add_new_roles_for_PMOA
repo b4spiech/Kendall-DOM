@@ -1,0 +1,35 @@
+BEGIN;
+
+INSERT INTO role (
+    role_code,
+    name,
+    role_type,
+    purpose,
+    responsibility_summary,
+    approval_authority,
+    is_active,
+    business_unit_id
+)
+VALUES
+(
+    'R-006',
+    'PMOA Manager',
+    'PMO Role',
+    'Owns PMOA procedures and the annual review cycle.',
+    'Owns procedure content, reviews, and approvals for PMOA managed documents.',
+    'Final approval for PMOA procedure changes.',
+    TRUE,
+    5
+),
+(
+    'R-007',
+    'PMOA Reviewer',
+    'PMO Role',
+    'Reviews PMOA procedures and supporting documentation.',
+    'Reviews content for accuracy, completeness, and compliance with standards.',
+    'Review authority only.',
+    TRUE,
+    5
+);
+
+COMMIT;
