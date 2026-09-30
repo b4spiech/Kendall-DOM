@@ -1,0 +1,43 @@
+BEGIN;
+
+INSERT INTO role_system_identity (
+    role_id,
+    system_id,
+    external_id,
+    external_name,
+    identity_type,
+    is_active,
+    notes
+)
+SELECT
+    8,
+    system_id,
+    external_id,
+    'PMOA Manager',
+    identity_type,
+    is_active,
+    notes
+FROM role_system_identity
+WHERE role_id = 1;
+
+INSERT INTO role_system_identity (
+    role_id,
+    system_id,
+    external_id,
+    external_name,
+    identity_type,
+    is_active,
+    notes
+)
+SELECT
+    9,
+    system_id,
+    external_id,
+    'PMOA Reviewer',
+    identity_type,
+    is_active,
+    notes
+FROM role_system_identity
+WHERE role_id = 3;
+
+COMMIT;
